@@ -10,7 +10,8 @@ This is the version for students working with Eclipse on school's virtual machin
 ## Starting point
 
 * Start by grabing the code from the repository [https://github.com/gaudel/java_PS4](https://github.com/gaudel/java_PS4/archive/master.zip)
-* Eclipse can import the project using `File => Import => General => Existing projects into Workspace` feature
+* Eclipse can import the project using `File => Import => General => Projets from Folder or Archive` feature
+* To enable JUnit, right-click on the project and choose `Build Path => Add Libraries... => JUnit => JUnit 4 => Finish`
 * Take some time to make sure you understand the code and what it is doing	
 	* `Main.java` in `src/main/java/stack` runs an example of use of a stack for each implementation of the interface `Stack` (already done, to run)
 	* `Stack.java` in `src/main/java/stack` defines the `Stack` interface (already done)
