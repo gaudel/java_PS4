@@ -2,7 +2,7 @@ package stack;
 
 public class LinkedListStack implements Stack {
 	
-	public ArrayStack() {
+	public LinkedListStack() {
 	}
 	
 	public boolean isEmpty(){
