@@ -136,3 +136,44 @@ next:& \begin{array}{|rl|}
 
 
 The file `stack.pdf` shows the evolution of this attributes when applying stack methods.
+
+
+## (Bonus) LinkedListStackIterator
+The aim is to be able to manipulate an iterator on a `LinkedListStack` which would iterate from the top to the bottom of the stack without changing the stack. Typically, this code
+
+```java
+LinkedListStack s = new LinkedListStack();
+s.push(1);
+s.push(2);
+s.push(3);
+s.pop();
+LinkedListStack.LinkedListStackIterator it = s.iterator();
+while (it.hasNext()) {
+	System.out.println(it.next());
+}
+System.out.println(s);
+```
+
+would output
+
+```
+2
+1
+[1, 2] 
+```
+
+I have to had to the `LinkedListStack` class
+
+* the method `public LinkedListStackIterator iterator()`,
+* and the class `LinkedListStackIterator`,
+where the Application Programming Interface of `LinkedListStackIterator` is
+
+```
+public LinkedListStackIterator(LinkedListStack s);
+public int next() throws NoNextException;
+public boolean hasNext();
+```
+
+By the way, the methods `next()` may return an exception which class has to be defined.
+
+Finally, do not forget to populate `LinkedListStackTest.java` with tests related to this new functionality.
